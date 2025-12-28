@@ -20,8 +20,6 @@ A digital-first student wellness portal providing 24/7 anonymous mental health s
 - **Hosting:** Firebase Hosting ready
 - **Security:** Encryption & access controls
 
-### 🚀 Live Demo
-[Netlify Link] OR [Try locally by downloading index.html]
 
 ### 📊 How It Works
 1. Student accesses portal anonymously
@@ -37,4 +35,4 @@ A digital-first student wellness portal providing 24/7 anonymous mental health s
 - Integrates with existing systems
 
 ### 👨‍💻 Developer
-[Your Name] - First Year, Trinity Academy of Engineering
+Kartiki Deore - First Year, Trinity Academy of Engineering
