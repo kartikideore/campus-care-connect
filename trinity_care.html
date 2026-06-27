@@ -237,7 +237,7 @@
         try {
             firebase.initializeApp(firebaseConfig);
             const db = firebase.firestore();
-            console.log("✅ Firebase Connected!");
+            console.log(" Firebase Connected!");
             
             // ====== APPLICATION CODE ======
             let currentPage = 1;
@@ -251,11 +251,11 @@
             };
             
             const quotes = [
-                "You are not alone. Every student faces challenges, and it's okay to ask for help. 💙",
-                "Your mental health is just as important as your grades. Take care of yourself first. 🌱",
-                "Small steps lead to big changes. You're already taking the first step by being here. 👣",
-                "It's okay not to be okay. What matters is that you're reaching out. 🤗",
-                "Your courage in seeking help will inspire others to do the same. ✨"
+                "You are not alone. Every student faces challenges, and it's okay to ask for help. ",
+                "Your mental health is just as important as your grades. Take care of yourself first. ",
+                "Small steps lead to big changes. You're already taking the first step by being here. ",
+                "It's okay not to be okay. What matters is that you're reaching out. ",
+                "Your courage in seeking help will inspire others to do the same. "
             ];
             
             // ====== MAIN FUNCTIONS ======
@@ -379,7 +379,7 @@
                                 </div>
                                 
                                 <div>
-                                    <label class="form-label">What made you smile today? 😊</label>
+                                    <label class="form-label">What made you smile today? </label>
                                     <input type="text" class="form-control" id="happyMoment"
                                            placeholder="Share one happy moment...">
                                 </div>
@@ -397,12 +397,12 @@
                                     <label class="form-label">What type of support do you need? *</label>
                                     <select class="form-select" id="supportType">
                                         <option value="">Select your priority</option>
-                                        <option value="academic">📚 Academic Support</option>
-                                        <option value="mental">🧠 Mental Health Support</option>
-                                        <option value="physical">🏥 Physical Health Support</option>
-                                        <option value="social">👥 Social Support</option>
-                                        <option value="career">💼 Career Guidance</option>
-                                        <option value="other">✨ Other</option>
+                                        <option value="academic"> Academic Support</option>
+                                        <option value="mental"> Mental Health Support</option>
+                                        <option value="physical"> Physical Health Support</option>
+                                        <option value="social"> Social Support</option>
+                                        <option value="career"> Career Guidance</option>
+                                        <option value="other"> Other</option>
                                     </select>
                                 </div>
                                 
@@ -581,12 +581,12 @@
                     
                     await db.collection("studentSubmissions").add(firebaseData);
                     
-                    console.log("✅ Data saved to Firebase!");
+                    console.log(" Data saved to Firebase!");
                     createConfetti();
                     
                 } catch (error) {
-                    console.error("❌ Firebase error:", error);
-                    alert("✅ Submitted! (Saved locally)");
+                    console.error(" Firebase error:", error);
+                    alert(" Submitted! (Saved locally)");
                     createConfetti();
                 }
             }
@@ -619,12 +619,12 @@
                             <div class="card-body">
                                 <div class="alert alert-danger">
                                     <h5><i class="fas fa-phone-alt me-2"></i>24/7 Crisis Helpline</h5>
-                                    <p>📞 555-HELP-NOW</p>
+                                    <p> 555-HELP-NOW</p>
                                 </div>
                                 
                                 <div class="alert alert-warning">
                                     <h5><i class="fas fa-shield-alt me-2"></i>Campus Security</h5>
-                                    <p>🚨 555-EMERGENCY</p>
+                                    <p> 555-EMERGENCY</p>
                                 </div>
                             </div>
                         </div>
@@ -636,7 +636,7 @@
                             <div class="card-body">
                                 <div class="alert alert-info">
                                     <h5><i class="fas fa-book me-2"></i>Academic Support Center</h5>
-                                    <p>📧 academic@trinity.edu</p>
+                                    <p> academic@trinity.edu</p>
                                 </div>
                             </div>
                         </div>
@@ -662,7 +662,7 @@
             window.onload = () => showPage(1);
             
         } catch (error) {
-            console.error("❌ Firebase initialization failed:", error);
+            console.error(" Firebase initialization failed:", error);
             document.getElementById("app").innerHTML = `
                 <div class="app-container">
                     <div class="college-header">
